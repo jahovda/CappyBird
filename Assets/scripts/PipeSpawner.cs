@@ -27,8 +27,10 @@ public class PipeSpawner : MonoBehaviour {
 	void Start() {
 		pipes = new List<Transform>();
 		game = GameManager.Instance;
-		if (beginInScreenCenter)
-			SpawnPipe();
+        if (beginInScreenCenter)
+        {
+            SpawnPipe();
+        }
 	}
 
 	void OnEnable() {
